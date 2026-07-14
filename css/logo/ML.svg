@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 220 220">
+
+<rect width="220" height="220" fill="white"/>
+
+<path d="
+M30 170
+L30 50
+L70 120
+L110 50
+L110 170"
+
+stroke="#111"
+stroke-width="7"
+fill="none"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<path d="
+M140 50
+L140 170
+L190 170"
+
+stroke="#111"
+stroke-width="7"
+fill="none"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+</svg>
