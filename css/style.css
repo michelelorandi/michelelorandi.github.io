@@ -1,0 +1,414 @@
+/* ===========================
+   I DISEGNI A CHINA
+   Michele Lorandi
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Source Sans 3',sans-serif;
+    color:#222;
+    background:#f7f6f3;
+    line-height:1.7;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    color:inherit;
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:92%;
+    max-width:1280px;
+    margin:auto;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#ffffff;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+}
+
+.logo img{
+
+    width:70px;
+
+}
+
+.logo h1{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    font-weight:500;
+
+}
+
+.logo p{
+
+    color:#777;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:.85rem;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+nav a{
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#9d6b2d;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    position:relative;
+
+}
+
+.hero img{
+
+    width:100%;
+    height:82vh;
+    object-fit:cover;
+
+}
+
+.hero-text{
+
+    position:absolute;
+
+    left:8%;
+    bottom:10%;
+
+    background:rgba(255,255,255,.90);
+
+    padding:35px;
+
+    max-width:520px;
+
+}
+
+.hero-text h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin-bottom:15px;
+
+}
+
+.hero-text p{
+
+    font-size:1.15rem;
+
+}
+
+/* ===========================
+   GALLERIA
+=========================== */
+
+.gallery{
+
+    padding:90px 0;
+
+}
+
+.gallery h2{
+
+    font-family:'Cormorant Garamond',serif;
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:55px;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.opera{
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.opera:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.opera img{
+
+    width:100%;
+    height:360px;
+    object-fit:cover;
+
+}
+
+.caption{
+
+    padding:24px;
+
+}
+
+.caption h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.caption p{
+
+    color:#777;
+
+}
+
+/* ===========================
+   ARTISTA
+=========================== */
+
+.about{
+
+    padding:90px 0;
+
+}
+
+.about h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    text-align:center;
+
+    font-size:3rem;
+
+    margin-bottom:30px;
+
+}
+
+.about p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:1.15rem;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#1b1b1b;
+
+    color:white;
+
+    padding:70px 0;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    width:80px;
+
+    margin:auto auto 20px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:900px){
+
+.header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+}
+
+.hero img{
+
+    height:60vh;
+
+}
+
+.hero-text{
+
+    position:static;
+
+    max-width:100%;
+
+}
+
+.hero-text h2{
+
+    font-size:2.3rem;
+
+}
+
+}
+
+/* ===========================
+   SMARTPHONE
+=========================== */
+
+@media(max-width:600px){
+
+.logo{
+
+    flex-direction:column;
+
+}
+
+.logo h1{
+
+    font-size:1.8rem;
+
+    text-align:center;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero img{
+
+    height:45vh;
+
+}
+
+.hero-text{
+
+    padding:25px;
+
+}
+
+.hero-text h2{
+
+    font-size:2rem;
+
+}
+
+.gallery{
+
+    padding:60px 0;
+
+}
+
+.about{
+
+    padding:60px 0;
+
+}
+
+}
